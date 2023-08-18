@@ -9,6 +9,7 @@ These instructions will provide guidance on setting up the test suite on your lo
 
 ## Prerequisites
 - Python 3.9 or higher
+- requests package (https://pypi.org/project/requests/)
 - pytest
 - virtual environment (https://virtualenv.pypa.io/en/stable/installation.html)
 
@@ -16,14 +17,14 @@ These instructions will provide guidance on setting up the test suite on your lo
 1. Navigate to the project directory after cloning the repo:
     > `cd api-test`
 2. Install the required dependencies:
-    > `pip install -r requirements.txt`
+    > `pip install pytest, requests`
 
 ## Running the tests
 Run all tests with the following command:
-> `pytest`
+> `pytest -s`
 
 Run a specific test with:
-> `pytest path/to/test.py::test_name`
+> `pytest -s path/to/test.py::test_name`
 
 ## Test Scenarios
 
